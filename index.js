@@ -5,9 +5,10 @@ const axios = require("axios").default;
 const btoa = require("btoa");
 
 Toolkit.run(async (tools) => {
-	// Assign owner and repo data to variables
-	const owner = secrets.REPO_OWNER;
-  const repo = secrets.REPO;
+  // Assign owner and repo data to variables
+
+	const owner = 'ming-yong'
+  const repo = 'ming-yong.github.io';
   
 	// Get the latest post in my jekyll site
 	var path = "_posts";
