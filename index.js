@@ -1,5 +1,4 @@
 const { Toolkit } = require("actions-toolkit");
-const { Octokit } = require("@octokit/rest");
 const dotenv = require("dotenv");
 dotenv.config();
 const axios = require("axios").default;
@@ -8,8 +7,8 @@ const btoa = require("btoa");
 Toolkit.run(async (tools) => {
   // Assign owner and repo data to variables
 
-	const owner = `${secrets.REPO_OWNER}`
-  const repo = `${secrets.REPO}`;
+	const owner = secrets.REPO_OWNER;
+  const repo = secrets.REPO;
   
 	// Get the latest post in my jekyll site
 	var path = "_posts";
