@@ -151,7 +151,6 @@ Toolkit.run(async (tools) => {
 			tools.exit.success("Processing complete");
 		}
   }
-  
+  tools.exit.success("There are no posts on DEV newer than the posts on your Jekyll site.");
 });
 
-tools.exit.success("There are no posts on DEV newer than the posts on your Jekyll site.");
